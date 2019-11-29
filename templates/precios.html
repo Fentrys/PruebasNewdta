@@ -1,0 +1,85 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<!-- Navigation -->
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">Tabla de Precios                   
+                </h1>
+                <ol class="breadcrumb">
+                    <li><a href="/">Home</a>
+                    </li>
+                    <li class="active">Tabla de precios</li>
+                </ol>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Content Row -->
+        <div class="row">
+            <div class="col-md-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Basico</h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="price"><sup>$</sup>30,000<sup>99</sup></span>
+                        <span class="period">Por mes</span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>1</strong> Usuarios</li>
+                        <li class="list-group-item"><strong>5</strong> Base de datos</li>                       
+                        <li class="list-group-item"><strong>10GB</strong> Espacio en disco</li>
+                        <li class="list-group-item"><strong>100GB</strong> Ancho de banda por Mes</li>
+                        <li class="list-group-item"><a href="#" class="btn btn-primary"> Solicitar!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-primary text-center">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Plus <span class="label label-success">Mejor valorado</span></h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="price"><sup>$</sup>45,000<sup>99</sup></span>
+                        <span class="period">Por mes</span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>10</strong> Usuarios</li>
+                        <li class="list-group-item"><strong>15</strong> Base de datos</li>                       
+                        <li class="list-group-item"><strong>1000GB</strong> Espacio en disco</li>
+                        <li class="list-group-item"><strong>10000GB</strong> Ancho de banda por Mes</li>
+                        <li class="list-group-item"><a href="#" class="btn btn-primary"> Solicitar!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default text-center">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Ultra</h3>
+                    </div>
+                    <div class="panel-body">
+                        <span class="price"><sup>$</sup>70,000<sup>99</sup></span>
+                        <span class="period">Por mes</span>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item"><strong>Unlimted</strong> Usuarios</li>
+                        <li class="list-group-item"><strong>30</strong> Base de datos</li>                        
+                        <li class="list-group-item"><strong>10000GB</strong> Espacio en disco</li>
+                        <li class="list-group-item"><strong>Ilimitada</strong> Ancho de banda por Mes</li>
+                        <li class="list-group-item"><a href="#" class="btn btn-primary"> Solicitar!</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+{% endblock %}

@@ -1,0 +1,50 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<div id="eit-estado" class="container pT60 text20">
+	<div class="title-air lowercase">
+		<h2>Conozca el estado de la tecnología en su empresa</h2>
+	</div>
+	<div class="row mB">
+		<div class="col-md-10 col-sm-12 col-md-offset-1">
+			<p class="text-center">
+				En este momento pueden estar ocurriendo muchas cosas en su negocio. Desde problemas de virus y malwares que ponen en riesgo toda su información, hasta la falta de conexión a la red o la internet que hoy es tan necesaria para ser productivos. Esto sumado al constante dolor de cabeza de no saber que va a suceder con el próximo apagón; si su información estará a salvo o si el computador le presentará inconvenientes.			</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-sm-12 col-md-offset-1">
+			<div class="row">
+				<div class="col-md-4 col-sm-4">
+					<img src="https://gbh.com.do/wp-content/themes/gbh/images/services/eit-arrow-r.png" title="" alt="Flecha izquierda" class="img-center eit-arrows hidden-xs">
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<img src="https://gbh.com.do/wp-content/themes/gbh/images/services/eit-desktop-man.png" title="" alt="Escritorio" class="img-responsive img-center mT mB">
+					<img src="https://gbh.com.do/wp-content/themes/gbh/images/services/opd-a-bottom.png" title="" alt="Flecha" class="img-responsive img-center mB">
+				</div>
+				<div class="col-md-4 col-sm-4">
+					<img src="https://gbh.com.do/wp-content/themes/gbh/images/services/eit-arrow-l.png" title="" alt="Flecha derecha" class="img-center eit-arrows hidden-xs">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-10 col-sm-12 col-md-offset-1">
+			<div class="col-md-3 col-sm-3">
+				<img src="https://gbh.com.do/wp-content/themes/gbh/images/services/eit-person.png" title="" alt="Personal" class="img-center">
+			</div>
+			<div class="col-md-9 col-sm-9">
+				<div class="title-air lowercase">
+					<h2 class="text-left mT">Tenga tranquilidad</h2>
+					<p class="text-left">
+						Nuestra experiencia y amplitud en soluciones de tecnología de la información nos permite realizar una auditoría general a su infraestructura tecnológica con miras a normalizar y realizar modificaciones que le den tranquilidad a usted y sus operaciones.					</p>
+				</div>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+		<p class="text-center mT">
+			<a href="{% url 'solicitud'%}" class="btn-gbh scroll-to">¡Solicitar servicio ya!</a>
+		</p>
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,91 @@
+{% load staticfiles %}
+<!doctype html>
+<html lang="es" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>{% block title %} NewDta {% endblock %} </title>	
+    <link rel="icon" href="{% static 'icono.ico' %}" type="image/icon type">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/modern-business.css' %}" rel="stylesheet">
+    <link href="{% static 'font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">NewDta</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{% url 'nosotros' %}">Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'servicio' %}">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="{% url 'contacto' %}">Contactos</a>
+                    </li>                                                          
+                    <li>
+                        <a href="{% url 'precios' %}">Tabla de precios</a>
+                     </li>
+                    <li>
+                      <a href="{% url 'solicitud' %}">Solicitud</a>
+                    </li>
+                    <li>
+                      <a href="{% url 'ticket' %}">Soporte</a>
+                    </li>
+                   </ul>                   
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>    
+
+    <!-- Page Content -->
+    <div class="container">
+        <hr>
+      {% block content %} 
+      <div>
+        
+      </div>
+      {% endblock %}
+      
+       
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; NewDta, 2009  | <a href="/" target="_blank" rel="nofollow">Base de conocimiento</a></p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="{% static 'js/jquery.js' %}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>   
+    <script src="{% static 'js/contact_me.js' %}"></script>
+    <script src="{% static 'js/jqBootstrapValidation.js' %}"></script>
+  
+</body>
+
+</html>

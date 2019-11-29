@@ -1,0 +1,57 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+   <div class="row jumbotron" >
+            <div class="col-md-7">
+                <h2>Ticket de soporte</h2>
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Nombre completo:</label>
+                            <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor, introduce tu nombre completo..">
+                            <p class="help-block"></p>
+                        </div>
+                    </div>
+                    <div class="control-group form-group hide">
+                        <div class="controls">
+                            <label>Fecha:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor, introduce tu telefono.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Correo electronico:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, introduce tu correo.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Numero del servicio:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, introduce tu correo.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Telefono:</label>
+                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor, introduce tu telefono.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Problema:</label>
+                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, introduce tu correo.">
+                        </div>
+                    </div>
+                    <div class="control-group form-group">
+                        <div class="controls">
+                            <label>Explicacion del problema:</label>
+                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Por favor, un comentario." maxlength="999" style="resize:none"></textarea>
+                        </div>
+                    </div>
+                    <div id="success"></div>
+                    <!-- For success/fail messages -->
+                    <button type="submit" class="btn btn-primary">Enviar el ticket</button>
+                </form>
+            </div>    
+        </div> 
+{% endblock %}
