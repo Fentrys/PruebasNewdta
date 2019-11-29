@@ -45,30 +45,32 @@
         <div class="row">
             <div class="col-md-8">
                 <h3>Envia tu mensaje</h3>
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form name="sentMessage" method="post" id="contactForm" novalidate>
+                    {% csrf_token %}                    
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Nombre completo:</label>
-                            <input type="text" class="form-control" id="name" required data-validation-required-message="Por favor, introduce tu nombre completo..">
+                            {{form.Nombre_completo}}
                             <p class="help-block"></p>
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Telefono:</label>
-                            <input type="tel" class="form-control" id="phone" required data-validation-required-message="Por favor, introduce tu telefono.">
+                            {{form.Telefono}}
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Correo electronico:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, introduce tu correo.">
+                            {{form.Correo}}
                         </div>
                     </div>
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Comentario:</label>
-                            <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Por favor, un comentario." maxlength="999" style="resize:none"></textarea>
+                            <hr>
+                           {{form.Comentario}}
                         </div>
                     </div>
                     <div id="success"></div>
