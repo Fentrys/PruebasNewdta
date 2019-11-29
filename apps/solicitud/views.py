@@ -18,7 +18,7 @@ def contacto(request):
       form = ContactosdForm(request.POST)
       if form.is_valid():
         form.save();
-      return redirect('contacto')
+      return redirect('/')
   else:
       form = ContactosdForm()
 
@@ -32,7 +32,7 @@ def solicitud(request):
       form = SolicitudForm(request.POST)
       if form.is_valid():
         form.save();
-      return redirect('solicitud')
+      return redirect('/')
   else:
       form = SolicitudForm()
 

@@ -42,10 +42,10 @@
 
         <!-- Contact Form -->
         <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-        <div class="row">
+        <div class="row">            
             <div class="col-md-8">
                 <h3>Envia tu mensaje</h3>
-                <form name="sentMessage" method="post" id="contactForm" novalidate>
+                <form method="post">
                     {% csrf_token %}                    
                     <div class="control-group form-group">
                         <div class="controls">

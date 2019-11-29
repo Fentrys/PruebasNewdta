@@ -1,10 +1,11 @@
 {% extends 'base/base.html' %}
 
 {% block content %}
-   <div class="row jumbotron" >
+   <div class="row" >
             <div class="col-md-7">
                 <h2>Ticket de soporte</h2>
-                <form name="sentMessage" id="contactForm" novalidate>
+                <form method="post">
+                {% csrf_token %}
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Nombre completo:</label>
@@ -27,7 +28,7 @@
                     <div class="control-group form-group">
                         <div class="controls">
                             <label>Numero del servicio:</label>
-                            <input type="email" class="form-control" id="email" required data-validation-required-message="Por favor, introduce tu correo.">
+                            <input type="number" class="form-control" id="email" required data-validation-required-message="Por favor, introduce tu correo.">
                         </div>
                     </div>
                     <div class="control-group form-group">

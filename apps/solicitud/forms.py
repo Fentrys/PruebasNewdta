@@ -7,6 +7,7 @@ class SolicitudForm(forms.ModelForm):
     
     class Meta:
         model = Solicitudes
+        
         fields = ['Nombre',
         'Apellido',
         'Paquete',
@@ -31,7 +32,7 @@ class SolicitudForm(forms.ModelForm):
             'Correo': forms.TextInput(attrs={'class':'form-control'}),
             'Telefono': forms.TextInput(attrs={'class':'form-control'}),
             'Fecha': forms.DateInput(attrs={'class':'form-control', 'type':'date'}),
-            'Comentarios': forms.TextInput(attrs={'class':'form-control', 'rows':'10', 'cols':'100'}),
+            'Comentarios': forms.Textarea(attrs={'class':'form-control'}),
         }
 
 class ContactosdForm(forms.ModelForm):
@@ -54,5 +55,5 @@ class ContactosdForm(forms.ModelForm):
             'Nombre_completo': forms.TextInput(attrs={'class':'form-control'}),
             'Telefono': forms.TextInput(attrs={'class':'form-control'}),
             'Correo': forms.TextInput(attrs={'class':'form-control'}),            
-            'Comentarios': forms.TextInput(attrs={'class':'form-control'}),
+            'Comentario':  forms.Textarea(attrs={'class':'form-control'}),
         }
